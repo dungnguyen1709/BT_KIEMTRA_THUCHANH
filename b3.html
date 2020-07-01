@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isFibonacci(integer) {
+        let isExit = false;
+        let a = 0, b =1;
+        for (let i = 0; i < integer; i++) {
+            let c = a + b;
+             a = b;
+             b = c;
+             if (integer == c) {
+                 isExit = true
+             }
+        }
+        return isExit
+    }
+    
+</script>
+</body>
+</html>

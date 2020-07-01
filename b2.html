@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(arr,x) {
+        let isExist = false;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == x) {
+                for (let j = 0; j < arr.length; j++) {
+                    arr[j] = arr[j + 1];
+                }
+                arr.length--;
+
+            }
+        }
+        return arr;
+    }
+</script>
+</body>
+</html>
